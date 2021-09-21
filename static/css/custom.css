@@ -1,0 +1,472 @@
+/* 
+Awesome Logseq : https://github.com/logseq/awesome-logseq#css-themes
+
+
+Theme
+Notion like : 
+https://github.com/Sansui233/logseq-bonofix-theme/ 
+@import url('https://cdn.jsdelivr.net/gh/sansui233/logseq-bonofix-theme/custom.css')
+
+
+Plugin
+Page tabs:
+https://github.com/pengx17/logseq-plugin-tabs
+
+*/
+
+
+/* 
+@import url('https://piotrsss.github.io/logseq-tools/public/bujo-css/main.css');
+@import url('https://piotrsss.github.io/logseq-tools/public/bujo-css/dark-coffee.css');
+@import url('https://piotrsss.github.io/logseq-tools/public/bujo-css/dark-coffee-dots.css');
+@import url('https://piotrsss.github.io/logseq-tools/public/bujo-css/light-white.css');
+@import url('https://piotrsss.github.io/logseq-tools/public/bujo-css/light-white-dots.css');
+
+ */
+
+ /* @import url('https://cdn.jsdelivr.net/gh/sansui233/logseq-bonofix-theme/custom.css'); */
+ @import url("https://cdn.jsdelivr.net/gh/pengx17/logseq-dev-theme@main/bullet_threading.css");
+
+ :root {
+   --ls-block-bullet-threading-width: 2px;
+ }
+
+
+ /* === CUSTOM STYLING === */
+
+a.tag[data-ref="star" i]::before {
+    content: "⭐️";
+    visibility: visible;
+    border-radius: 2px;
+    padding: 2px;
+    background: red;
+    box-shadow: 0 0 4px red;
+}
+  
+  a.tag[data-ref="star" i] {
+    visibility: hidden;
+    width: 24px;
+    white-space: nowrap;
+}
+
+a.tag[data-ref="card" i]::before {
+    content: "🎴";
+    visibility: visible;
+    border-radius: 2px;
+    padding: 2px;
+    background: red;
+    box-shadow: 0 0 4px red;
+}
+  
+a.tag[data-ref="card" i] {
+    visibility: hidden;
+    width: 24px;
+    white-space: nowrap;
+}  
+
+  a.tag[data-ref="attention" i]::before {
+    content: "ATTN:";
+    text-decoration: underline; 
+    font-weight: bold;
+    color: green;
+    visibility: visible;
+    border-radius: 2px;
+    padding: 2px;
+    background: yellow;
+    box-shadow: 0 0 4px red;
+}
+  
+a.tag[data-ref="attention" i] {
+    visibility: hidden;
+    width: 50px;
+    white-space: nowrap;
+}  
+
+
+
+a.tag[data-ref="think" i]::before {
+    content: "🤔"; 
+    font-size: 16px;
+    vertical-align: middle;
+    display: inline-block;
+    visibility: visible;
+    border-radius: 2px;
+    padding: 2px;
+    background: khaki;
+    box-shadow: 0 0 4px lightyellow;
+}
+  
+a.tag[data-ref="think" i] {
+    visibility: hidden;
+    width: 24px;
+    white-space: nowrap;
+}  
+
+a.tag[data-ref="pros" i]::before {
+    content: "✔️ PROS ✔️"; 
+    color: white;
+    font-size: 16px;
+    vertical-align: middle;
+    display: inline-block;
+    visibility: visible;
+    border-radius: 2px;
+    padding: 2px;
+    background: green;
+    box-shadow: 0 0 30px green;
+}
+  
+a.tag[data-ref="pros" i] {
+    visibility: hidden;
+    width: 24px;
+    white-space: nowrap;
+} 
+
+a.tag[data-ref="cons" i]::before {
+    content: "❌ CONS ❌";
+    color: white;
+    font-size: 16px;
+    vertical-align: middle;
+    display: inline-block;
+    visibility: visible;
+    border-radius: 2px;
+    padding: 2px;
+    background: red;
+    box-shadow: 0 0 30px red;
+}
+  
+a.tag[data-ref="cons" i] {
+    visibility: hidden;
+    width: 24px;
+    white-space: nowrap;
+} 
+
+a.tag[data-ref="checkpoint" i]::before {
+    content: "🚩"; 
+    font-size: 16px;
+    vertical-align: middle;
+    display: inline-block;
+    visibility: visible;
+    border-radius: 2px;
+    padding: 2px;
+    background: orange;
+    box-shadow: 0 0 30px orange;
+}
+  
+a.tag[data-ref="checkpoint" i] {
+    visibility: hidden;
+    width: 24px;
+    white-space: nowrap;
+} 
+
+a.tag[data-ref="sol" i]::before {
+    content: "💊"; 
+    font-size: 16px;
+    vertical-align: middle;
+    display: inline-block;
+    visibility: visible;
+    border-radius: 2px;
+    padding: 2px;
+    background: skyblue;
+    box-shadow: 0 0 4px skyblue;
+}
+  
+a.tag[data-ref="sol" i] {
+    visibility: hidden;
+    width: 24px;
+    white-space: nowrap;
+} 
+
+
+
+
+
+a.tag[data-ref="doubt" i]::before {
+    content: "❓"; 
+    font-size: 16px;
+    vertical-align: middle;
+    display: inline-block;
+    visibility: visible;
+    border-radius: 2px;
+    padding: 2px;
+    background: yellow;
+    box-shadow: 0 0 4px yellow;
+}
+  
+a.tag[data-ref="doubt" i] {
+    visibility: hidden;
+    width: 20px;
+    white-space: nowrap;
+} 
+
+
+a.tag[data-ref="unresolved" i]::before {
+    content: "❌"; 
+    font-size: 16px;
+    vertical-align: middle;
+    display: inline-block;
+    visibility: visible;
+    border-radius: 2px;
+    padding: 2px;
+    background: yellow;
+    box-shadow: 0 0 4px yellow;
+}
+  
+a.tag[data-ref="unresolved" i] {
+    visibility: hidden;
+    width: 30px;
+    white-space: nowrap;
+} 
+
+a.tag[data-ref="resolved" i]::before {
+    content: "✔️"; 
+    font-size: 16px;
+    vertical-align: middle;
+    display: inline-block;
+    visibility: visible;
+    border-radius: 2px;
+    padding: 2px;
+    background: yellow;
+    box-shadow: 0 0 4px yellow;
+}
+  
+a.tag[data-ref="resolved" i] {
+    visibility: hidden;
+    width: 30px;
+    white-space: nowrap;
+} 
+
+
+
+/* Meaning based markup for aiding notes */
+
+
+  
+
+a.tag[data-ref="def" i]::before {
+    content: "🎯";
+    color: white;
+    font-size: 16px;
+    vertical-align: baseline;
+    display: inline-flex;
+    justify-content: left;
+    visibility: visible;
+    border-radius: 2px;
+    padding: 2px;
+    width: 26px;
+    background: #f64f59;
+    /* background: #f94144; */
+    box-shadow: #f64f59;
+}
+
+a.tag[data-ref="def" i] {
+    visibility: hidden;
+    width: 30px;
+    white-space: nowrap;
+} 
+
+
+a.tag[data-ref="feat" i]::before {
+    content: "💬";
+    color: white;
+    font-size: 16px;
+    vertical-align: middle;
+    width: 26px;
+    display: inline-block;
+    visibility: visible;
+    border-radius: 2px;
+    padding: 2px;
+    background: #f3722cc9;
+    box-shadow: 0 0 30px #f3722c;
+}
+
+a.tag[data-ref="feat" i] {
+    visibility: hidden;
+    width: 30px;
+    white-space: nowrap;
+} 
+
+
+a.tag[data-ref="types" i]::before {
+    content: "🚥‎";
+    color: white;
+    font-size: 16px;
+    vertical-align: baseline;
+    /* display: block; */
+    width: 26px;
+    display: inline-flex;
+    visibility: visible;
+    border-radius: 2px;
+    padding: 2px;
+    background-color: #f9c64fb1;
+    /* background-size: 10px 30px; */
+    box-shadow: 0 0 20px #f9c74f;
+}
+
+a.tag[data-ref="types" i] {
+    visibility: hidden;
+    width: 30px;
+    white-space: nowrap;
+} 
+
+
+
+
+
+a.tag[data-ref="use" i]::before {
+    content: "🔥‎";
+    color: white;
+    font-size: 16px;
+    vertical-align: baseline;
+    /* display: block; */
+    width: 26px;
+    display: inline-block;
+    visibility: visible;
+    border-radius: 2px;
+    padding: 2px;
+    background-color: #ce23b7bb;
+    /* background-size: 10px 30px; */
+    box-shadow: 0 0 20px #ce23b7bb;
+}
+
+a.tag[data-ref="use" i] {
+    visibility: hidden;
+    width: 30px;
+    white-space: nowrap;
+} 
+
+  
+a.tag[data-ref="example" i]::before {
+    content: "👀‎";
+    color: white;
+    font-size: 16px;
+    vertical-align: baseline;
+    /* display: block; */
+    width: 26px;
+    display: inline-block;
+    visibility: visible;
+    border-radius: 2px;
+    padding: 2px;
+    background-color: greenyellow;
+    /* background-size: 10px 30px; */
+    box-shadow: 0 0 20px greenyellow;
+}
+
+a.tag[data-ref="example" i] {
+    visibility: hidden;
+    width: 30px;
+    white-space: nowrap;
+} 
+
+
+a.tag[data-ref="exercise" i]::before {
+    content: "‎⚒️";
+    color: white;
+    font-size: 16px;
+    vertical-align: baseline;
+    /* display: block; */
+    width: 26px;
+    display: inline-block;
+    visibility: visible;
+    border-radius: 2px;
+    padding: 2px;
+    background-color: #00afb9;
+    /* background-size: 10px 30px; */
+    box-shadow: 0 0 20px #00afb9;
+}
+
+a.tag[data-ref="exercise" i] {
+    visibility: hidden;
+    width: 30px;
+    white-space: nowrap;
+} 
+
+
+a.tag[data-ref="do" i]::before {
+    content: "⏹️";
+    color: white;
+    font-size: 16px;
+    vertical-align: baseline;
+    display: inline-flex;
+    justify-content: left;
+    visibility: visible;
+    border-radius: 2px;
+    padding: 2px;
+    width: 26px;
+    background: #f64f59;
+    /* background: #f94144; */
+    box-shadow: #f64f59;
+}
+
+a.tag[data-ref="do" i] {
+    visibility: hidden;
+    width: 30px;
+    white-space: nowrap;
+} 
+
+
+
+
+
+a.tag[data-ref="done" i]::before {
+    content: "✅";
+    color: white;
+    font-size: 16px;
+    vertical-align: baseline;
+    display: inline-flex;
+    justify-content: left;
+    visibility: visible;
+    border-radius: 2px;
+    padding: 2px;
+    width: 26px;
+    background: #f64f59;
+    /* background: #f94144; */
+    box-shadow: #f64f59;
+}
+
+a.tag[data-ref="done" i] {
+    visibility: hidden;
+    width: 30px;
+    white-space: nowrap;
+} 
+
+/* === CUSTOM SETTINGS === */
+/* Hide page backlinks and reference */
+.references {
+    display: none;
+  }
+
+/* body { zoom: 80%; } */
+
+/* 
+!!!
+  Experiments
+!!!
+*/
+
+
+
+
+
+/*  
+a.tag[data-ref="def" i]::before {
+    content: "🎯";
+    color: white;
+    font-size: 16px;
+    vertical-align: baseline;
+    display: inline-flex;
+    justify-content: left;
+    visibility: visible;
+    border-radius: 2px;
+    padding: 2px;
+    width: 300px;
+    background: linear-gradient(to right,  #12c2e9 0%,#c471ed 60%);
+    box-shadow: 0 0 20px linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(204,204,204,0.1) 60%);;
+}
+
+a.tag[data-ref="def" i] {
+    visibility: hidden;
+    width: 30px;
+    white-space: nowrap;
+}  
+
+*/
