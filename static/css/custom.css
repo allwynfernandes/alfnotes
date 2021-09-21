@@ -27,9 +27,10 @@ https://github.com/pengx17/logseq-plugin-tabs
  /* @import url('https://cdn.jsdelivr.net/gh/sansui233/logseq-bonofix-theme/custom.css'); */
  @import url("https://cdn.jsdelivr.net/gh/pengx17/logseq-dev-theme@main/bullet_threading.css");
 
- :root {
+:root {
    --ls-block-bullet-threading-width: 2px;
- }
+   --ls-page-text-size: 8px;
+}
 
 
  /* === CUSTOM STYLING === */
@@ -431,11 +432,6 @@ a.tag[data-ref="done" i] {
 
 /* === CUSTOM SETTINGS === */
 /* Hide page backlinks and reference */
-.references {
-    display: none;
-  }
-
-body { zoom: 80%; }
 
 /* 
 !!!
