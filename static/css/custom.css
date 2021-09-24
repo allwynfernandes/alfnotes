@@ -2,10 +2,7 @@
 Awesome Logseq : https://github.com/logseq/awesome-logseq#css-themes
 
 
-Theme
-Notion like : 
-https://github.com/Sansui233/logseq-bonofix-theme/ 
-@import url('https://cdn.jsdelivr.net/gh/sansui233/logseq-bonofix-theme/custom.css')
+ 
 
 
 Plugin
@@ -15,22 +12,27 @@ https://github.com/pengx17/logseq-plugin-tabs
 */
 
 
+
 /* 
-@import url('https://piotrsss.github.io/logseq-tools/public/bujo-css/main.css');
+Notion Like theme https://github.com/Sansui233/logseq-bonofix-theme/
+@import url('https://cdn.jsdelivr.net/gh/sansui233/logseq-bonofix-theme/custom.css')
+  
 @import url('https://piotrsss.github.io/logseq-tools/public/bujo-css/dark-coffee.css');
 @import url('https://piotrsss.github.io/logseq-tools/public/bujo-css/dark-coffee-dots.css');
+@import url('https://piotrsss.github.io/logseq-tools/public/bujo-css/main.css');
 @import url('https://piotrsss.github.io/logseq-tools/public/bujo-css/light-white.css');
 @import url('https://piotrsss.github.io/logseq-tools/public/bujo-css/light-white-dots.css');
+@import url('https://cdn.jsdelivr.net/gh/sansui233/logseq-bonofix-theme/custom.css');
+@import url('https://raw.githubusercontent.com/santiyounger/Cobra/main/cobra.css');
 
- */
+*/
 
- /* @import url('https://cdn.jsdelivr.net/gh/sansui233/logseq-bonofix-theme/custom.css'); */
- @import url("https://cdn.jsdelivr.net/gh/pengx17/logseq-dev-theme@main/bullet_threading.css");
+@import url('https://cdn.jsdelivr.net/gh/dracula/logseq@master/custom.css');
+@import url("https://cdn.jsdelivr.net/gh/pengx17/logseq-dev-theme@main/bullet_threading.css");
 
 :root {
    --ls-block-bullet-threading-width: 2px;
-   --ls-page-text-size: 8px;
-}
+ }
 
 
  /* === CUSTOM STYLING === */
@@ -432,13 +434,23 @@ a.tag[data-ref="done" i] {
 
 /* === CUSTOM SETTINGS === */
 /* Hide page backlinks and reference */
+.references {
+    visibility: hide ;
+  }
+
+.cp__right-menu-button * {
+	display: none;
+    z-index: -1;
+}
+
+
+/* body { zoom: 80%; } */
 
 /* 
 !!!
   Experiments
 !!!
 */
-
 
 
 
